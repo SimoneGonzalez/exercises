@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  /*Universal Selector*/
+    * {
+      border: 1px solid red;
+    }
+/*class selector*/
+    div.container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+/*child selector*/
+div>p {
+
+}
+<div>
+  <p>hi</p>
+</div>
+<p>
+/*decendant selector*/
+div p {
+
+}
+<div>
+  <ul>
+    <li><p>hello world</p></li>
+  </ul>
+</div
+
+
+
+
+
+    div {
+      padding-top: 5px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+  }
+  div {
+    padding: 5px 10px 5px 10px;
+  }
+  div {
+    padding: 5px 10px;
+  }
+  div {
+      padding: 30px;
+  }
+  /*box sizing property refers to what these sizing properties (width and height)
+  should include. just content-box (default) or border-box as well*/
+  div {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+  }
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <div id="greeting" class="section">
+    <h1>Hello!</h1>
+    <p>This content is all related!</p>
+    <p>Nice that we can group it using a "div" tag!</p>
+  </div>
+
+  <p>Sometimes, <span class="highlight">all we really want</span> is
+  to be able to refer to certain sections of our page, but we want to completely
+  <span class="highlight">control their styling</span>, and not get the
+  "b" or "i" tags involved</p>
+</body>
+</html>
