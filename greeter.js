@@ -1,31 +1,39 @@
-// var name = prompt('What is your name?');
-// alert('Hello World! ' + name);
-// console.log('Hello World!');
-//
-// var myAge = prompt('How old are you?');
-//
-// var ageCheck = function() {
-//   if(parseInt(myAge) === 24) {
-//     alert('You are awesome!');
-//   }
-//   else if(parseInt(myAge) === 21) {
-//     alert('Meh, you are ok');
-//   }
-//   else {
-//     alert('Too bad');
-//   };
-// };
-
-//ageCheck();
-
-var myFavoriteFood = prompt('What do you like to eat?');
+var name = prompt('What is your name?');
+alert('Hello World! ' + name);
+console.log('Hello World!');
 
 var getFood = function() {
+  var myFavoriteFood = prompt('What do you like to eat?').toLowerCase();
+
   if (myFavoriteFood === 'sushi') {
-    alert('Yay!');
+    alert('Yay! Let\'s get food!');
   } else {
-    alert('maybe next time.');
+    console.log('maybe next time.');
   }
 }
+var myAge = prompt('How old are you?');
 
-getFood();
+var ageCheck = function() {
+  if(parseInt(myAge) === 24) {
+    getFood();
+  }
+  else if(parseInt(myAge) === 21) {
+    alert('Meh, you are ok');
+  }
+  else {
+    alert('Too bad');
+  };
+};
+
+ageCheck();
+
+
+var getFood = function() {
+  var myFavoriteFood = prompt('What do you like to eat?');
+
+  if (myFavoriteFood === 'sushi') {
+    alert('Yay! Let\'s get food!');
+  } else {
+    console.log('maybe next time.');
+  }
+}
