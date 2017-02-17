@@ -1,3 +1,42 @@
+if (true) {
+
+}
+else if (true) {
+
+}
+
+else {
+
+}
+//or
+hbfjhdss || sjdkhduhf
+//and
+&&
+
+//strict equals
+===
+
+//less than or equal to
+<=
+
+//greater than or equal to
+>=
+
+//not equal to
+!==
+
+
+
+
+
+
+
+
+
+
+
+
+
 var name = prompt('What is your name?');
 alert('Hello World! ' + name);
 console.log('Hello World!');
